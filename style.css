@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #181825;
+    font-family: "Space Grotesk", sans-serif;
+    color: #6E7888;
+}
+
+
+
+.score-container {
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.points {
+    font-size: 12px;
+}
+.score-value {
+    font-size: 30px;
+    font-weight: bold;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 1px #6E7888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.controls-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.speed-selector, .grid-selector {
+    margin-top: 15px;
+}
+
+.speed-selector p, .grid-selector p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.speed-options, .grid-options {
+    display: flex;
+    justify-content: center;
+}
+
+.game-select {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #6E7888;
+    background: transparent;
+    color: #6E7888;
+    font-family: "Space Grotesk", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 120px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path fill="%236E7888" d="M0 0l6 6 6-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 25px;
+}
+
+.game-select:hover {
+    background-color: #222738;
+}
+
+.game-select:focus {
+    outline: none;
+    border-color: #6E7888;
+    box-shadow: 0 0 0 2px rgba(110, 120, 136, 0.3);
+}
+.creator {
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+}

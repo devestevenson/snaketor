@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Snaketor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="game-container">
+            <div class="score-container">
+                <!-- <span class="points">PTS: </span> -->
+                <span id="score" class="score-value">0</span>
+            </div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="controls">
+                <p class="instructions">Usa (← ↑ → ↓) para controlar la serpiente</p>
+
+                <div class="controls-options">
+                    <div class="speed-selector">
+                        <p>Velocidad:</p>
+                        <div class="speed-options">
+                            <select id="speed-select" class="game-select">
+                                <option value="slow">Lento</option>
+                                <option value="normal" selected>Normal</option>
+                                <option value="fast">Rápido</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid-selector">
+                        <p>Cuadrícula:</p>
+                        <div class="grid-options">
+                            <select id="grid-select" class="game-select">
+                                <option value="small" selected>20x20</option>
+                                <option value="medium">30x30</option>
+                                <option value="large">40x40</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="creator">by: <a href="https://devestevenson.vercel.app/" target="_blank">devestevenson</a></p>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.7.77/build/Tone.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
